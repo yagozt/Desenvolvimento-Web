@@ -2,7 +2,6 @@ var controle = new AtividadeControle();
 
 window.onload = function(){
     
-    controle.atualizarLista()
+    controle.atualizarLista();
+    document.getElementById("addTodo").onclick = function() { controle.adicionarNota(); }
 }
-
-document.getElementById("addTodo").onclick = controle.adicionarNota();

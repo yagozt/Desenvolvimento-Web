@@ -16,9 +16,9 @@
     <script src="persistencia/atividadePersistencia.js"></script>
     <script src="controle/atividadeControle.js"></script>
 </head>
-<body onload="Inicializacao()">
+<body>
     <div id="container">
-        <h1>To Do List <span onclick="controle.adicionarNota()"><i class="fas fa-plus"></i></span></h1>
+        <h1>To Do List <span id="addTodo"><i class="fas fa-plus"></i></span></h1>
         <input type="text" name="novoTodo" id="novoTodo" placeholder="Add Novo Todo"> 
         
         <ul id="listaTodo">
@@ -27,13 +27,13 @@
     </div>
 
     
-    <script>
+    <!--<script>
         var controle = new AtividadeControle();
         function Inicializacao(){
             controle.atualizarLista();
         }
-    </script>
-    <!-- <script src="todo.js"></script> -->
+    </script> -->
+    <script src="todo.js"></script>
     
 </body>
 </html>
